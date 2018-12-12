@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>T E S T</title>
+<script>
+function resultado() {
+  var p1, p2, p3, p4, p5, nota
+
+  <!-- 1ª pregunta -->
+  if (document.getElementById('p11').checked==true) {p1=1}
+  else {p1=0}
+  <!-- 2ª pregunta -->
+  if (document.getElementById('p22').checked==true) {p2=1}
+  else {p2=0}
+  <!-- 3ª pregunta -->
+  if (document.getElementById('p33').checked==true) {p3=1}
+  else {p3=0}
+  <!-- 4ª pregunta -->
+  if (document.getElementById('p44').checked==true) {p4=1}
+  else {p4=0}
+  <!-- 5ª pregunta -->
+  if(document.getElementById(p55).checked==true) {p5=1}
+  else {p5=0}
+
+  nota=p1+p2+p3+p4+p5;
+  alert(" Aciertos: " + nota);
+  location.reload();
+}
+</script>
+</head>
+<body>
+<h2>T E S T</h2>
+<hr>
+<form style="font:normal 16px sans-serif">
+<p>1.-¿Qué es Git?t....</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta1" id="p11"> un sistema de control de versiones que originalmente fue diseñado para operar en un entorno Linux..</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> ninguna.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> un sistema de control de versiones que originalmente fue diseñado para operar en cualquier entorno.C.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p14"> git es un juego en linea D.</p>
+
+<p>2.-¿Qué es un sistema de control de versiones?....</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p21"> ninguna.</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta2" id="p22"> Un sistema de control de versiones es el conjunto de herramientas que tenemos disponibles para poder gestionar.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p23"> Un sistema  de versiones para una base C.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p24"> un sistema logico D.</p>
+
+<p>3.-que es Committed...</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p31"> la imformacion es robada A.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p32"> Es la parte en la que nuestra información no es segura B.</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta3" id="p33"> Es la parte en la que nuestra información está segura alojada en nuestras bases de datos C.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p34"> ninguna D.</p>
+
+<p>4.-que es Modified... .</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p41">En esta parte hemos realizado cambios en la base A.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p42"> ninguna.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p43">no realizan cambios.</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta4" id="p44"> En esta parte hemos realizado cambios en nuestros archivos.</p>
+
+<p>5.- Los principales tipos de datos son:</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta5" id="p51"> De tipo entero, reales, caracteres, logicos</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta5" id="p52"> De tipo numericos y alfabeticos</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta5" id="p53"> Solo alfanumericos</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta5" id="p54"> Solo simbolos</p>
+
+
+<p>6.-¿Qué es Centralizado?....</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p21"> ninguna.</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta2" id="p22"> Este sistema depende de un server en el que este almacenado el repositorio.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p23"> Este sistema depende de un server para funcionar C.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p24"> un sistema logico D.</p>
+
+
+<p>7.-¿Qué es Velocidad?....</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p21"> ninguna.</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta2" id="p22"> Puedes trabajar fluidamente desde tu computador..</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p23"> Este sistema depende de un server para ir rapido C.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p24"> Puedes trabajar sin problema. D.</p>
+
+
+<p>8.-Diseño Sencillo....</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta1" id="p11"> Herramientas necesarias para tomar acción en el VCS a través de código robusto...</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> ninguna.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> Puedes trabajar fluidamente .</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p14"> no contiene herramientas D.</p>
+
+
+<p>9.-Git Directory (repository)..</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta1" id="p11"> Los archivos son incluidos al repositorio con el uso de commits...</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> ninguna.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> Puedes trabajar fluidamente .</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p14"> Los archivos no son  incluidos al repositorio con el uso de commits..</p>
+
+<p>10.-Staging Area..</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta1" id="p11"> Se preparan los archivos para ser incluidos al repositorio....</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> ninguna.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> no preparan los archivos  al repositorio. .</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p14"> no contiene herramientas D.</p>
+
+<hr>
+<p><input type="button" value=" R E S U L T A D O " onclick="resultado()"/></p>
+</form>
+</body>
+</html>
